@@ -1,3 +1,6 @@
+swal("Hello Theacher!", "Lista Para Cuestinar Mi Trabajo","success");
+
+
 /** Condiciones nos permiten Validar Si, Sí algo es Cierto
  * 
  * if (true){
@@ -39,26 +42,29 @@ function limpiar() {
 
 function mostrarResultado(Resultado) {
     let valorInput = document.getElementById('data').value
-    let arreglo = valorInput.split (' ')
+    let arreglo = valorInput.split(' ')
 
     let suma = parseInt(arreglo[0]) + parseInt(arreglo[2])
     document.getElementById('data').value = suma
 }
-/**
+
 if (arreglo[1] == '+') {
     let suma = parseInt(arreglo[0]) + parseInt(arreglo[2])
     document.getElementById('data').value = suma
-}else if (arreglo[1] =='-') {
+} else if (arreglo[1] == '-') {
     let resta = parseInt(arreglo[0]) - parseInt(arreglo[2])
     document.getElementById('data').value = resta
-}else if (arreglo[1] == '*') {
+} else if (arreglo[1] == '*') {
     let multiplicar = parseInt(arreglo[0]) * parseInt(arreglo[2])
     document.getElementById('data').value = multiplicar
-}else if(arreglo[1] == '/') {
+} else if (arreglo[1] == '/') {
     let dividir = parseInt(arreglo[0]) / parseInt(arreglo[2])
     document.getElementById('data').value = dividir
+} else {
+    swal("Upss!", "Ingrese Un Carcater!", "error");
 }
-*/
+/*
+
 switch(arreglo[1]){
     case '+':
         let suma = parseInt(arreglo[0]) + parseInt(arreglo[2])
@@ -77,35 +83,36 @@ switch(arreglo[1]){
         document.getElementById('data').value = dividir
         break;
     default:
-        alert("Este Proceso No en Acceso:")("")
+        swal("Upss!", "Agrega Un Caracter!", "error");
+}
+*/
+function preguntarDia() {
+    let dias = prompt('Ingrese Un Día De La Semana')
 }
 
-function preguntarDia() {
-    let dias = prompt('Ingrese Un Día De La Semana')  
-}
-    switch(dias){
-        case 'lunes':   
-            alert("Día 1: ¡Vamos a Empezar!")
-            break
-        case 'martes':
-            alert("Día 2: ¡Tiempo Para Calentar! ")
-            break
-        case 'miercoles':
-            alert("Día 3: No ha de Gustar!")
-            break;
-        case 'jueves':
-            alert("Día 4:¡Aún Sigues Aquí! Vamos A Dormir")
-            break;
-        case 'viernes':
-            alert("Día 5: Fin del Sufrimiento")
-            break;
-        case 'sabado':
-            alert("Día 6: SIN COMENTARIOS")  
-            break; 
-        case 'domingo':
-            alert("Día 7: Vamos a Descanzar")
-            break;
-            
-        default:
-            alert("Esto No corresponde a Un Día De La Semana:")
+switch (dias) {
+    case 'lunes':
+        alert("Día 1: ¡Vamos a Empezar!")
+        break
+    case 'martes':
+        alert("Día 2: ¡Tiempo Para Calentar! ")
+        break
+    case 'miercoles':
+        alert("Día 3: No ha de Gustar!")
+        break;
+    case 'jueves':
+        alert("Día 4:¡Aún Sigues Aquí! Vamos A Dormir")
+        break;
+    case 'viernes':
+        alert("Día 5: Fin del Sufrimiento")
+        break;
+    case 'sabado':
+        alert("Día 6: SIN COMENTARIOS")
+        break;
+    case 'domingo':
+        alert("Día 7: Vamos a Descanzar")
+        break;
+
+    default:
+        alert("Esto No corresponde a Un Día De La Semana:")
 }

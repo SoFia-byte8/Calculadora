@@ -45,8 +45,8 @@ h1 {
     font-size: 30px;
     margin-bottom: 4%;
     background-color: black;
-    color: aqua;
-    border: 5px aqua solid;
+    color: rgb(18, 173, 173);
+    border: 5px rgb(23, 221, 221) solid;
     border-radius: 20px;
 }
 
