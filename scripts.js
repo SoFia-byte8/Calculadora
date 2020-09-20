@@ -1,4 +1,4 @@
-swal("Hello Theacher!", "Lista Para Cuestinar Mi Trabajo","success");
+swal("Hello Theacher!", "Lista Para Cuestinar Mi Trabajo", "success");
 
 
 /** Condiciones nos permiten Validar Si, Sí algo es Cierto
@@ -63,6 +63,7 @@ if (arreglo[1] == '+') {
 } else {
     swal("Upss!", "Ingrese Un Carcater!", "error");
 }
+
 /*
 
 switch(arreglo[1]){
